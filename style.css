@@ -1,0 +1,140 @@
+/* Layout */
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  text-align: center;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Intro */
+.hello-line {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 0 0 1rem 0;
+}
+
+.domain {
+  font-family: monospace;
+  background: linear-gradient(to right, #38bdf8, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+/* Divider */
+.train-divider {
+  border: none;
+  height: 4px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #64748b 0,
+    #64748b 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  margin: 2rem auto;
+  width: 80%;
+  opacity: 0.2;
+}
+
+/* Headings */
+h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+  color: #e2e8f0;
+}
+
+.subtle {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+/* Cool Things */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 600px;
+  width: 100%;
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+.project a {
+  font-size: 1.25rem;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project p {
+  font-size: 1rem;
+  color: #cbd5e1;
+  margin: 0.25rem 0 0;
+}
+
+.project:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+
+/* Boring Things */
+.boring-things p {
+  font-size: 1rem;
+  color: #94a3b8;
+  margin-bottom: 1rem;
+}
+
+.resume-link {
+  font-weight: bold;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.resume-link:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  margin-top: 4rem;
+  font-size: 0.95rem;
+  color: #94a3b8;
+}
+
+.contact-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
